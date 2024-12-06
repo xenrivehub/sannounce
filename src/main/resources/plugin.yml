@@ -1,0 +1,11 @@
+name: spearAnnounce
+version: '${project.version}'
+main: com.spearforge.spearannounce.SpearAnnounce
+depend:
+  - PlaceholderAPI
+commands:
+  sannounce:
+    description: Main Command for Spear Announce
+    usage: /sannounce
+    aliases:
+      - announce

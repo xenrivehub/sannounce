@@ -1,0 +1,66 @@
+Announcements:
+  1:
+    # Sound to play with announcement, if its "null" will not play any sound.
+    # You can find all sounds here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    # Some of them may not work because of your server version or client version
+    sound: "null"
+    # In worlds that announcement will only be show. If empty like this, will show in all worlds.
+    worlds: []
+    #  Permission to show the announcement. If you don't want to set a permission, just delete this line.
+    permission: "sannounce.vip"
+    # Type of the announcement.
+    # ACTIONBAR will show in the action bar. - Should be 1 line only !!
+    # BOSSBAR will show in the boss bar. - Should be 1 line only !!
+    # BROADCAST will show in the chat. You can also use <center> example announce </center> to center the announcement - Can be multiple lines !!
+    type: "BROADCAST"
+    # Lines of the announcement. Use & to color the text. Also support HEX colors.
+    # You can use https://alonsoaliaga.github.io/generator/ to generate HEX colors. Output Format is Legacy
+    lines:
+      - "&7-----------------------------------------------------"
+      - "<center>&asAnnounce support centered texts</center>"
+      - "<center>&2Try it now if you want!</center>"
+      - "&7-----------------------------------------------------"
+  2:
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    worlds: []
+    type: "BROADCAST"
+    lines:
+      - "&7-----------------------------------------------------"
+      - "&eYou can add sounds to your announcements."
+      - "&6This announcement will play the sound ENTITY_EXPERIENCE_ORB_PICKUP"
+      - "&7-----------------------------------------------------"
+  3:
+    sound: "null"
+    worlds:
+      - "spear1"
+      - "spear2"
+    permission: "sannounce.vip"
+    type: "BROADCAST"
+    lines:
+      - "&7-----------------------------------------------------"
+      - "&6You can also set permissions to your announcements."
+      - "&6This announcement will only be show for players with the permission &esannounce.vip"
+      - "&6And in the worlds spear1 and spear2"
+      - "&7-----------------------------------------------------"
+  4:
+    sound: "null"
+    worlds: []
+    type: "BROADCAST"
+    lines:
+      - "&7-----------------------------------------------------"
+      - "&x&d&6&6&9&1&0s&x&d&9&7&5&1&8p&x&d&d&8&0&2&1e&x&e&0&8&c&2&9a&x&e&3&9&7&3&2r&x&e&6&a&3&3&aa&x&e&a&a&f&4&3n&x&e&d&b&a&4&bn&x&f&0&c&6&5&3o&x&f&3&d&1&5&cu&x&f&7&d&d&6&4n&x&f&a&e&8&6&dc&x&f&d&f&4&7&5e &calso support PlaceholderAPI!"
+      - "&2For example your balance is: &f&l%vault_eco_balance%"
+      - "&cYou can use all placeholders you have with &x&f&d&f&4&7&5s&x&f&a&e&8&6&dp&x&f&7&d&d&6&4e&x&f&3&d&1&5&ca&x&f&0&c&6&5&3r&x&e&d&b&a&4&ba&x&e&a&a&f&4&3n&x&e&6&a&3&3&an&x&e&3&9&7&3&2o&x&e&0&8&c&2&9u&x&d&d&8&0&2&1n&x&d&9&7&5&1&8c&x&d&6&6&9&1&0e"
+      - "&7-----------------------------------------------------"
+  5:
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    worlds: []
+    type: "ACTIONBAR"
+    lines:
+      - "&7This is action bar type announce from sAnnounce!"
+  6:
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    worlds: []
+    type: "BOSSBAR"
+    lines:
+      - "&7This is bossbar type announce from sAnnounce! Settings in config.yml"

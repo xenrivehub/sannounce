@@ -1,0 +1,37 @@
+# Prefix for all messages in the plugin.
+prefix: "&7[&bMinia Announce&7] &r"
+# Announcements interval in seconds.
+announce-interval: 10
+
+join-message: true
+# Join message text. Use %player% to display the player's name in the message. %playercount% is the number of players joined.
+join-message-text: "&bWelcome again &f%player% &bto the server! Good to see you back. &c&l#%playercount%"
+first-join-message-text: "&bWelcome &f%player% &bto the server! &c&l#%playercount%"
+
+# This bossbar settings is for the /mbossbar command, this is sending bossbar announcements to server not just one player.
+# Color of the bossbar. Options are "BLUE", "GREEN", "PINK", "PURPLE", "RED", "WHITE", "YELLOW"
+bossbar-color: "BLUE"
+# Style of the bossbar. Options are "SOLID", "SEGMENTED_6", "SEGMENTED_10", "SEGMENTED_12", "SEGMENTED_20"
+# We suggest use SEGMENTED styles for better visibility. For example SEGMENTED_6 is 6 segments of the bossbar, so you can set bossbar-time to 6 seconds.
+bossbar-style: "SEGMENTED_6"
+# Time in seconds for the bossbar to stay on screen. Default is 5 seconds. We suggest keeping it between 5-60 seconds
+bossbar-time: 6
+
+# ActionBar duration in seconds.
+# Default is 5 seconds.
+actionbar-time: 5
+
+# Messages
+no-permission: "&cYou do not have permission to use this command."
+actionbar-usage: "&cUsage: /sa actionbar <playerName/all> <message>"
+bossbar-usage: "&cUsage: /sa bossbar <playerName/all> <message>"
+broadcast-usage: "&cUsage: /sa broadcast <playerName/all> <message>"
+player-not-found: "&cPlayer not found."
+toggle-off: "&cAnnouncements are turned off."
+toggle-on: "&aAnnouncements are turned on."
+reload: "&aPlugin reloaded."
+commands:
+  - "&7-----------------------------------------------------"
+  - "&7/sannounce - &fMain command of the plugin."
+  - "&7Try using it and all other commands will appear on chat."
+  - "&7-----------------------------------------------------"
